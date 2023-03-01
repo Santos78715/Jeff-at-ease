@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.atease.it.quantum.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_vetForVetsFragment"
+            app:destination="@id/nav_vets_for_vets" />
+        <action
+            android:id="@+id/action_nav_home_to_atEaseFeedFragment"
+            app:destination="@id/nav_feed" />
+        <action
+            android:id="@+id/action_nav_home_to_vetSuccessStoriesFragment"
+            app:destination="@id/nav_success_stories" />
+        <action
+            android:id="@+id/action_nav_home_to_donateNowFragment"
+            app:destination="@id/nav_doante_now" />
+        <action
+            android:id="@+id/action_nav_home_to_ourSponsorsFragment"
+            app:destination="@id/nav_sponsors" />
+        <action
+            android:id="@+id/action_nav_home_to_aboutUsFragment"
+            app:destination="@id/nav_about_us" />
+        <action
+            android:id="@+id/action_nav_home_to_termsAndConditionFragment"
+            app:destination="@id/nav_terms" />
+        <action
+            android:id="@+id/action_nav_home_to_privacyPolicyFragment"
+            app:destination="@id/nav_privacy_policy" />
+        <action
+            android:id="@+id/action_nav_home_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_vets_for_vets"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.VetForVetsFragment"
+        android:label="fragment_vet_for_vets"
+        tools:layout="@layout/fragment_vet_for_vets" />
+    <fragment
+        android:id="@+id/nav_feed"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.AtEaseFeedFragment"
+        android:label="fragment_at_ease_feed"
+        tools:layout="@layout/fragment_at_ease_feed" />
+    <fragment
+        android:id="@+id/nav_success_stories"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.VetSuccessStoriesFragment"
+        android:label="fragment_vet_success_stories"
+        tools:layout="@layout/fragment_vet_success_stories" />
+    <fragment
+        android:id="@+id/nav_doante_now"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.DonateNowFragment"
+        android:label="fragment_donate_now"
+        tools:layout="@layout/fragment_donate_now" />
+    <fragment
+        android:id="@+id/nav_sponsors"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.OurSponsorsFragment"
+        android:label="fragment_our_sponsors"
+        tools:layout="@layout/fragment_our_sponsors" />
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.TermsAndConditionFragment"
+        android:label="fragment_terms_and_condition"
+        tools:layout="@layout/fragment_terms_and_condition" />
+    <fragment
+        android:id="@+id/nav_privacy_policy"
+        android:name="com.atease.it.quantum.ui.fragments.drawer.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.atease.it.quantum.ui.fragments.notifications.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.atease.it.quantum.ui.fragments.home.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+</navigation>

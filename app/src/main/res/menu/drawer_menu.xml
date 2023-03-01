@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single"
+        tools:showIn="navigation_view">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_vets_for_vets"
+            android:icon="@drawable/ic_home"
+            android:title="Vet for vets" />
+        <item
+            android:id="@+id/nav_feed"
+            android:icon="@drawable/ic_home"
+            android:title="At Ease Feed" />
+        <item
+            android:id="@+id/nav_success_stories"
+            android:icon="@drawable/ic_home"
+            android:title="Vet success stories" />
+        <item
+            android:id="@+id/nav_doante_now"
+            android:icon="@drawable/ic_home"
+            android:title="Donate Now" />
+        <item
+            android:id="@+id/nav_sponsors"
+            android:icon="@drawable/ic_home"
+            android:title="Our Sponsors" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_home"
+            android:title="Terms &amp; Conditions" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_home"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/ic_home"
+            android:title="Privacy Policy" />
+
+    </group>
+
+</menu>

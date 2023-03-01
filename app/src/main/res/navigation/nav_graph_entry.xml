@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.atease.it.quantum.ui.fragments.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.atease.it.quantum.ui.fragments.splash.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_landingOneFragment"
+            app:destination="@id/landingOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingOneFragment"
+        android:name="com.atease.it.quantum.ui.fragments.splash.LandingOneFragment"
+        android:label="fragment_landing_one"
+        tools:layout="@layout/fragment_landing_one" >
+        <action
+            android:id="@+id/action_landingOneFragment_to_landingTwoFragment"
+            app:destination="@id/landingTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/landingTwoFragment"
+        android:name="com.atease.it.quantum.ui.fragments.splash.LandingTwoFragment"
+        android:label="fragment_landing_two"
+        tools:layout="@layout/fragment_landing_two" >
+        <action
+            android:id="@+id/action_landingTwoFragment_to_authOptionsFragment"
+            app:destination="@id/authOptionsFragment"
+            app:popUpTo="@id/landingTwoFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/authOptionsFragment"
+        android:name="com.atease.it.quantum.ui.fragments.auth.AuthOptionsFragment"
+        android:label="fragment_auth_options"
+        tools:layout="@layout/fragment_auth_options" >
+        <action
+            android:id="@+id/action_authOptionsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_authOptionsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.atease.it.quantum.ui.fragments.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.atease.it.quantum.ui.fragments.auth.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" />
+</navigation>
